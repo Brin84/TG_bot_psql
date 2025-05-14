@@ -12,3 +12,6 @@ venv/
 # ▶ Md and CSV
 *.md
 !README.md
+
+# ▶ Media
+media/
