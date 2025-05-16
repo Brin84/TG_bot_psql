@@ -37,7 +37,6 @@ def init_db():
         for category_name, name, price, desc, image in products:
             category_id = category_map.get(category_name)
             if category_id:
-                # Проверяем, существует ли продукт
                 product = session.query(Products).filter_by(product_name=name).first()
                 if not product:
                     product = Products(
